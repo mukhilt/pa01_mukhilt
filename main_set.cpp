@@ -106,15 +106,20 @@ int main(int argv, char** argc){
   }
 
 
+  cout << endl;
+
   cout << "Alice's cards:" << endl;
   for (auto it = Alice.begin(); it != Alice.end(); ++it) {
     cout << *it << endl;
   }
-  cout << endl;
+
+  cout << endl;             
+
   cout << "Bob's cards:" << endl;
   for (auto it = Bob.begin(); it != Bob.end(); ++it) {
     cout << *it << endl;
   }
+
 
   return 0;
 
