@@ -105,19 +105,19 @@ int main(int argv, char** argc){
     }
   }
 
-  cout << "Alice's cards: " << endl;
-  for (auto it = Alice.begin(); it != Alice.end(); ++it) {
-    const Card&card = *it;
-    cout << card << endl;
-  }
 
-  cout << "Bob's cards: " << endl;
-  for (auto it = Bob.rbegin(); it != Bob.rend(); ++it) {
-    const Card&card = *it;
-    cout << card << endl;
+  cout << "Alice's cards:" << endl;
+  for (auto it = Alice.begin(); it != Alice.end(); ++it) {
+    cout << *it << endl;
+  }
+  cout << endl;
+  cout << "Bob's cards:" << endl;
+  for (auto it = Bob.begin(); it != Bob.end(); ++it) {
+    cout << *it << endl;
   }
 
   return 0;
+
 }
 
 
